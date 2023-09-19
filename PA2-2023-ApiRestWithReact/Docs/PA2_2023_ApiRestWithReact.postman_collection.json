@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "3e6237c2-99f4-4c5d-9bee-5e319e0afcfa",
+		"name": "PA2_2023_ApiRestWithReact",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23359517"
+	},
+	"item": [
+		{
+			"name": "create book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"Id\": \"6508a415c005ce291e1af422\",\r\n        \"Name\": \"Test Book\",\r\n        \"Price\": 53.26,\r\n        \"Category\": \"Test Category\",\r\n        \"Author\": \"Test Author\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7007/api/books",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7007",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7007/api/books",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7007",
+					"path": [
+						"api",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "read book by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7007/api/books/6508a415c005ce291e1af41f",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7007",
+					"path": [
+						"api",
+						"books",
+						"6508a415c005ce291e1af41f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"Id\": \"6508a415c005ce291e1af422\",\r\n        \"Name\": \"Test Book\",\r\n        \"Price\": 63.26,\r\n        \"Category\": \"Test Category\",\r\n        \"Author\": \"Test Author\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7007/api/books/6508a415c005ce291e1af422",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7007",
+					"path": [
+						"api",
+						"books",
+						"6508a415c005ce291e1af422"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7007/api/books/6508a415c005ce291e1af422",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7007",
+					"path": [
+						"api",
+						"books",
+						"6508a415c005ce291e1af422"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
